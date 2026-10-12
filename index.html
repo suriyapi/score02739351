@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>ประกาศคะแนน 02739351</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<style>
+  :root{
+    --ku:#006664; --ku-deep:#004a48; --ku-tint:#e6f0ef;
+    --ink:#1b2321; --muted:#5d6b68; --line:#dfe6e4;
+    --paper:#f5f7f6; --card:#ffffff; --accent:#c8a24a;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    font-family:'IBM Plex Sans Thai',system-ui,sans-serif;
+    background:var(--paper); color:var(--ink);
+    line-height:1.55; -webkit-font-smoothing:antialiased;
+  }
+  .top{
+    background:var(--ku); color:#fff;
+    padding:28px 16px 64px;
+  }
+  .wrap{max-width:560px;margin:0 auto}
+  .eyebrow{font-size:13px;letter-spacing:.04em;opacity:.8;margin:0}
+  .course{font-size:20px;font-weight:600;margin:4px 0 2px;line-height:1.35}
+  .term{font-size:14px;opacity:.85;margin:0}
+  main{padding:0 16px 40px;margin-top:-44px}
+  .card{
+    background:var(--card);border-radius:14px;
+    box-shadow:0 1px 2px rgba(0,0,0,.04),0 6px 24px rgba(0,70,68,.08);
+    padding:20px;margin-bottom:14px;
+  }
+  .who{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+  .who h2{font-size:19px;margin:0;font-weight:600}
+  .who .en{font-size:13px;color:var(--muted);margin:2px 0 0}
+  .meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:13px;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:500;font-family:'IBM Plex Mono',monospace}
+  .chip{
+    flex:none;background:var(--ku-tint);color:var(--ku-deep);
+    font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;white-space:nowrap
+  }
+  .score-label{font-size:14px;color:var(--muted);margin:0 0 4px}
+  .score-big{display:flex;align-items:baseline;gap:6px}
+  .score-big .v{font-family:'IBM Plex Mono',monospace;font-size:56px;font-weight:600;color:var(--ku);line-height:1}
+  .score-big .f{font-size:20px;color:var(--muted);font-family:'IBM Plex Mono',monospace}
+  .score-text{font-size:22px;font-weight:600;color:#9a3b2f}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:18px}
+  .stat{background:var(--paper);border-radius:10px;padding:8px 6px;text-align:center}
+  .stat .k{font-size:11px;color:var(--muted)}
+  .stat .n{font-family:'IBM Plex Mono',monospace;font-size:16px;font-weight:600}
+  .pos{font-size:13px;color:var(--muted);margin:14px 0 4px}
+  .pos b{color:var(--ink)}
+  svg.hist{width:100%;height:auto;display:block;margin-top:6px}
+  .legend{display:flex;gap:14px;font-size:12px;color:var(--muted);margin-top:4px}
+  .legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+  .msg{text-align:center;padding:28px 20px}
+  .msg h2{margin:8px 0 6px;font-size:20px}
+  .msg p{color:var(--muted);margin:6px 0}
+  .msg .mail{font-family:'IBM Plex Mono',monospace;color:var(--ink);background:var(--paper);padding:2px 8px;border-radius:6px;word-break:break-all}
+  .btn{
+    display:inline-block;margin-top:14px;background:var(--ku);color:#fff;text-decoration:none;
+    padding:10px 18px;border-radius:10px;font-weight:500;font-size:15px
+  }
+  .icon{width:44px;height:44px;border-radius:50%;background:var(--ku-tint);display:inline-grid;place-items:center;color:var(--ku);font-size:22px;font-weight:700}
+  footer{font-size:12px;color:var(--muted);text-align:center;line-height:1.7}
+  footer .acct{font-family:'IBM Plex Mono',monospace}
+  .login{text-align:center;padding:30px 20px}
+  .login h2{margin:6px 0 6px;font-size:20px}
+  .login p{color:var(--muted);margin:4px 0 18px;font-size:14px}
+  #gbtn{display:flex;justify-content:center;min-height:44px}
+  .spin{width:28px;height:28px;border:3px solid var(--ku-tint);border-top-color:var(--ku);border-radius:50%;animation:s .8s linear infinite;margin:6px auto 10px}
+  @keyframes s{to{transform:rotate(360deg)}}
+  .link{background:none;border:0;color:var(--ku);font:inherit;font-size:12px;text-decoration:underline;cursor:pointer;padding:0}
+  @media (max-width:380px){ .stats{grid-template-columns:repeat(2,1fr)} .score-big .v{font-size:48px} }
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap" id="hdr">
+  <p class="eyebrow">ประกาศคะแนน · 02739351</p>
+  <p class="course">การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์</p>
+  <p class="term">ภาคต้น ปีการศึกษา 2569</p>
+</div></header>
+<main><div class="wrap" id="app"></div></main>
+
+<script>
+  /* ★ ตั้งค่า 2 บรรทัดนี้ */
+  const CLIENT_ID = '334171664613-pdinobuff3fg8jgh4j2c8e8ga31m3vud.apps.googleusercontent.com'; // OAuth Client ID (ตัวเดียวกับใน Code.gs)
+  const API_URL   = 'https://script.google.com/macros/s/XXXXXXXXXXXX/exec';             // URL Web app ของ Apps Script
+  const INSTRUCTOR = 'อ.ดร.สุริยะ พินิจการ';
+
+  const app = document.getElementById('app');
+  let D = null;
+
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const fmt = (n, d) => (Math.round(n * Math.pow(10, d)) / Math.pow(10, d)).toLocaleString('th-TH', {maximumFractionDigits: d});
+  function histogram(sc) {
+    const vals = sc.values || [];
+    if (vals.length < 3) return '';
+    const lo = 0;
+    const hi = sc.full || Math.ceil(sc.stats.max / 10) * 10 || 10;
+    const bins = 10, w = (hi - lo) / bins;
+    const counts = new Array(bins).fill(0);
+    vals.forEach(v => { let b = Math.floor((v - lo) / w); if (b >= bins) b = bins - 1; if (b < 0) b = 0; counts[b]++; });
+    let mine = -1;
+    if (sc.numeric) { mine = Math.floor((sc.value - lo) / w); if (mine >= bins) mine = bins - 1; if (mine < 0) mine = 0; }
+    const max = Math.max.apply(null, counts);
+    const W = 320, H = 120, pad = 18, bw = W / bins;
+    let g = '';
+    counts.forEach((c, i) => {
+      const h = max ? (c / max) * (H - pad - 14) : 0;
+      const x = i * bw + 2, y = H - pad - h;
+      g += '<rect x="' + x + '" y="' + y + '" width="' + (bw - 4) + '" height="' + h + '" rx="3" fill="' + (i === mine ? 'var(--accent)' : '#b9d3d1') + '"/>';
+      if (c) g += '<text x="' + (x + (bw - 4) / 2) + '" y="' + (y - 3) + '" text-anchor="middle" font-size="9" fill="#5d6b68">' + c + '</text>';
+    });
+    for (let i = 0; i <= bins; i += 2) {
+      g += '<text x="' + Math.min(Math.max(i * bw, 6), W - 6) + '" y="' + (H - 4) + '" text-anchor="middle" font-size="9" fill="#5d6b68">' + fmt(lo + i * w, 0) + '</text>';
+    }
+    const mx = ((sc.stats.mean - lo) / (hi - lo)) * W;
+    g += '<line x1="' + mx + '" x2="' + mx + '" y1="6" y2="' + (H - pad) + '" stroke="var(--ku)" stroke-width="1.5" stroke-dasharray="3 3"/>';
+    return '<svg class="hist" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="การกระจายคะแนนของหมู่">' + g + '</svg>' +
+      '<div class="legend">' + (sc.numeric ? '<span><i style="background:var(--accent)"></i>ช่วงคะแนนของคุณ</span>' : '') +
+      '<span><i style="background:var(--ku);height:2px;vertical-align:3px"></i>ค่าเฉลี่ยหมู่</span></div>';
+  }
+
+  function scoreCard(sc) {
+    let h = '<div class="card"><p class="score-label">' + esc(sc.label) + '</p>';
+    if (sc.numeric) {
+      h += '<div class="score-big"><span class="v">' + fmt(sc.value, 2) + '</span>' + (sc.full ? '<span class="f">/ ' + fmt(sc.full, 2) + '</span>' : '') + '</div>';
+    } else if (sc.value == null) {
+      h += '<div class="score-text" style="color:var(--muted)">ยังไม่มีคะแนน</div>';
+    } else {
+      h += '<div class="score-text">' + esc(sc.value) + '</div>';
+    }
+    const st = sc.stats;
+    if (st) {
+      h += '<div class="stats">' +
+        '<div class="stat"><div class="k">เฉลี่ยหมู่</div><div class="n">' + fmt(st.mean, 2) + '</div></div>' +
+        '<div class="stat"><div class="k">มัธยฐาน</div><div class="n">' + fmt(st.median, 2) + '</div></div>' +
+        '<div class="stat"><div class="k">ต่ำสุด</div><div class="n">' + fmt(st.min, 2) + '</div></div>' +
+        '<div class="stat"><div class="k">สูงสุด</div><div class="n">' + fmt(st.max, 2) + '</div></div></div>';
+      if (sc.numeric) {
+        const diff = sc.value - st.mean;
+        h += '<p class="pos">คะแนนของคุณ<b>' + (diff >= 0 ? 'สูงกว่า' : 'ต่ำกว่า') + 'ค่าเฉลี่ย ' + fmt(Math.abs(diff), 2) + ' คะแนน</b>' +
+          (D.showRank && sc.rank ? ' · ลำดับที่ <b>' + sc.rank + '</b> จาก ' + st.n + ' คน' : '') +
+          ' (SD ' + fmt(st.sd, 2) + ', n = ' + st.n + ')</p>';
+      }
+      h += histogram(sc);
+    }
+    return h + '</div>';
+  }
+
+
+  function card(icon, title, body, actions) {
+    return '<div class="card msg"><div class="icon">' + icon + '</div><h2>' + title + '</h2>' + body + (actions || '') + '</div>';
+  }
+  const retryBtn = '<button class="btn" style="border:0;cursor:pointer;font-family:inherit" onclick="signOut()">เข้าสู่ระบบด้วยบัญชีอื่น</button>';
+
+  function footer(email) {
+    return '<footer>' + (email ? 'เข้าสู่ระบบในชื่อ <span class="acct">' + esc(email) + '</span> · <button class="link" onclick="signOut()">ออกจากระบบ</button><br>' : '') +
+      'หากคะแนนไม่ถูกต้อง โปรดแจ้ง ' + esc(INSTRUCTOR) + '</footer>';
+  }
+
+  function showLogin(note) {
+    app.innerHTML = '<div class="card login"><div class="icon">G</div><h2>เข้าสู่ระบบเพื่อดูคะแนน</h2>' +
+      '<p>ใช้บัญชี Google ของมหาวิทยาลัย <b>@ku.th</b><br>ระบบจะแสดงเฉพาะคะแนนของคุณเท่านั้น</p>' +
+      (note ? '<p style="color:#9a3b2f;margin-top:-8px">' + note + '</p>' : '') +
+      '<div id="gbtn"></div></div>' + footer();
+    const draw = () => {
+      if (!window.google || !google.accounts) return setTimeout(draw, 150);
+      google.accounts.id.initialize({ client_id: CLIENT_ID, callback: onCredential, auto_select: true, ux_mode: 'popup' });
+      google.accounts.id.renderButton(document.getElementById('gbtn'),
+        { theme: 'filled_blue', size: 'large', shape: 'pill', text: 'signin_with', locale: 'th', width: 260 });
+      google.accounts.id.prompt();
+    };
+    draw();
+  }
+
+  function showLoading() {
+    app.innerHTML = '<div class="card msg"><div class="spin"></div><p>กำลังโหลดคะแนน…</p></div>';
+  }
+
+  async function onCredential(resp) {
+    showLoading();
+    try {
+      // text/plain เพื่อไม่ให้เบราว์เซอร์ส่ง preflight (Apps Script ไม่รองรับ OPTIONS)
+      const r = await fetch(API_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({ token: resp.credential }) });
+      D = await r.json();
+    } catch (e) {
+      D = { status: 'neterr' };
+    }
+    render();
+  }
+
+  function signOut() {
+    if (window.google && google.accounts) google.accounts.id.disableAutoSelect();
+    D = null;
+    showLogin();
+  }
+
+  function render() {
+    let html = '';
+    if (D.status === 'ok') {
+      html += '<div class="card"><div class="who"><div><h2>' + esc(D.student.name) + '</h2>' +
+        (D.student.nameEn ? '<p class="en">' + esc(D.student.nameEn) + '</p>' : '') + '</div>' +
+        '<span class="chip">หมู่ ' + esc(D.section) + '</span></div>' +
+        '<div class="meta"><span>รหัสนิสิต <b>' + esc(D.student.id) + '</b></span></div></div>';
+      D.scores.forEach(sc => html += scoreCard(sc));
+      html += footer(D.email) + (D.updated ? '<footer>ข้อมูล ณ ' + esc(D.updated) + '</footer>' : '');
+      app.innerHTML = html;
+      return;
+    }
+    if (D.status === 'notfound') {
+      html = card('?', 'ไม่พบรายชื่อของบัญชีนี้', '<p>บัญชีที่ใช้: <span class="mail">' + esc(D.email) + '</span></p>' +
+        '<p>บัญชีนี้ไม่อยู่ในรายชื่อนิสิตวิชานี้ หากลงทะเบียนแล้วโปรดติดต่อ ' + esc(INSTRUCTOR) + '</p>', retryBtn);
+    } else if (D.status === 'domain') {
+      html = card('!', 'กรุณาใช้บัญชี @ku.th', '<p>คุณเข้าด้วย <span class="mail">' + esc(D.email) + '</span> ซึ่งไม่ใช่บัญชีของมหาวิทยาลัย</p>', retryBtn);
+    } else if (D.status === 'closed') {
+      html = card('⏳', 'ยังไม่เปิดประกาศคะแนน', '<p>โปรดกลับมาตรวจสอบอีกครั้งตามที่อาจารย์แจ้ง</p>');
+    } else if (D.status === 'invalid') {
+      return showLogin('การเข้าสู่ระบบหมดอายุหรือไม่ถูกต้อง กรุณาลองใหม่');
+    } else {
+      html = card('!', 'เชื่อมต่อระบบไม่ได้', '<p>โปรดลองใหม่อีกครั้งในอีกสักครู่</p>',
+        '<button class="btn" style="border:0;cursor:pointer;font-family:inherit" onclick="location.reload()">ลองใหม่</button>');
+    }
+    app.innerHTML = html + footer(D.email);
+  }
+
+  showLogin();
+</script>
+</body>
+</html>
